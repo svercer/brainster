@@ -1,0 +1,12 @@
+Stojance Manev=atu=goran@mail.com=222994=Студенти од програмирање
+Boban Manev=bob=stojance@mail.com=555444=Студенти од data science
+Murat Cinar=BTA Macedonia=bta@bta.com=022564333=Студенти од маркетинг
+dalibor mitev=grozd=goran@mail.com=777777=Студенти од маркетинг
+Vasil Vasilev=Dell=dell@gmail.com=02564321=Студенти од дизајн
+goran petkov=grozd=grozd@dr.com=043256256=Студенти од data science
+dalibor mitev=BTA Macedonia=goran@mail.com=333=Студенти од програмирање
+dragan=BTA Macedonia=mail@mail.com=555444=Студенти од програмирање
+Petar=Brainster=petar@brainster.com=021234567=Студенти од data science
+Elizabtea Manev=mycompany=atu@atu.com=777777=Студенти од data science
+Stojance Manev=atu=atu@atu.com=222994=Студенти од маркетинг
+Edin Gerlek =Gerlek=gerlek@gerlek.com=222994=Студенти од data science

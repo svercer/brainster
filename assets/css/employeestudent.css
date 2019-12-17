@@ -1,0 +1,387 @@
+body {
+    color: #353535!important;
+    font-family: "Ubuntu", sans-serif!important;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    font-style: normal; 
+    padding-top: 12vh;
+    background-color: #f7d231;
+
+    /* margin: 0; */
+}
+/* ---------------------------------------------------------------------------------------------- */
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+.custom-select select {
+    display: none;
+ } 
+  
+.select-selected {
+    background-color: white;
+    color: black;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    top: 10px;
+    right: 30px;
+    width: 0;
+    height: 0;
+    /* border: 6px solid transparent;
+    border-color: black transparent transparent transparent; */
+  }
+  .select-items div,.select-selected {
+    color: grey;
+    padding: 10px 16px;
+    border: 1px solid darkslategrey;
+    border-radius: 5px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.1em;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-radius: 5px;
+
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  /* ------------------------------------------------------------------------------------ */
+
+.margin-20 {
+    margin-bottom: 20%;
+}
+.get-requests-error {
+    color: red;
+    background-color: white;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.get-requests-success {
+    color: black;
+    /* background-color: white; */
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+#congrats-img {
+    width: 150px;
+}
+
+/* COLORS */
+.bg-red {
+    background-color: red!important;
+}
+.red-col {
+    color: red;
+}
+.text-white {
+    color: white;
+}
+.body-color {
+    background-color: #f7d231;
+}
+.padding-side-0 {
+    padding-left: 0;
+    padding-right: 0;
+} 
+.padding-0 {
+    padding: 0;
+}
+.border-10 {
+    border-radius: 10px;
+}
+.border-top-10 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.border-0 {
+    border-radius: 0;
+}
+
+.padding-2 {
+    padding: 2% 0;
+}
+.margin-5 {
+    margin: 5%;
+}
+.margin-top-botom-5 {
+    margin: 5% 0;
+}
+.margin-botom-10 {
+    margin-bottom: 10%;
+}
+.padding-5-0 {
+    padding: 5% 0;
+}
+.padding-10-0 {
+    padding: 10% 0;
+}
+.padding-10-bottom {
+    padding-bottom: 10%;
+}
+.padding-top-5-bottom-15 {
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
+
+
+/* navbar start */
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 12vh;
+    text-align: center;
+    padding: 0 3%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 1px 2px 5px 1px rgba(78, 85, 79, 0.2);
+}
+.links {
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 15vh;
+}
+.logo {
+    margin-left: 5%;
+    width: 80px;
+    max-width: 80px;
+    padding: 5px;
+}
+.nav-main ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.nav-main ul li {
+    text-align: center;
+}
+.nav-main ul li a {
+    text-decoration: none;
+    color: black;
+    margin: auto 10px;
+}
+
+.nav-main button, .btn-nav {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;    
+}
+/* Hamburger Menu */
+.barsMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #f7d231;
+}
+.barsMenu:hover {
+    background-color: #d1b32c;
+}
+.icon-bar {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 5%;
+    border-radius: 10px;
+}
+.bar-75 {
+    width: 66%;
+}
+.bar-50 {
+    width: 33%;
+}
+
+a.employee {
+    text-decoration: none;
+    color: white;
+}
+a.employee:hover {
+    text-decoration: none;
+    color: silver;
+}
+/* SIDE BAR */
+.nav-sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 0vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: black;
+    visibility: hidden;
+    overflow: visible;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+.nav-sidebar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    list-style: none;
+    margin-top: 100px;
+
+}
+.nav-sidebar a {
+    text-decoration: none;
+    color: white;
+}
+.nav-sidebar a:hover {
+    text-decoration: none;
+    color: silver;
+   
+
+}
+.nav-sidebar li {
+    margin: 5% 0;
+}
+.nav-sidebar li:hover:not(:last-child) {
+    transform: scale(1.1);
+}
+button.sidebarIcon {
+    background-color: black;
+    font-size: 2em;
+    border: none;
+    color: white;
+    cursor: pointer;
+    align-self: flex-end;
+    margin: 22px;
+
+}
+/* navbar-finished */
+/* FORM INTRO */
+
+
+form input {
+   font-style: italic;
+}
+p.h1 {
+    font-size: 5em;
+}
+.btn-margin {
+    margin-top: 1%;
+}
+
+/* Select button */
+
+
+
+
+
+
+
+
+input[list] {
+    font-style: normal;
+    color: black!important;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+  }
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+.footer p {
+    margin: 0;
+    font-size: 0.9em; 
+
+}
+#Cards {
+    padding-bottom: 8%;
+}
+
+
+
+
+/* MEDIA */
+@media only screen and (max-width:1024px) {
+    .links, nav > a {
+        display: none;
+        text-align: center;
+    }
+    .nav-main {
+        justify-content: space-between;
+    }
+    
+}
+@media only screen and (min-width:1025px){
+    .barsMenu {
+        display: none;
+    }
+    .nav-sidebar {
+        display: none;
+    }
+}
+@media only screen and (max-width:768px){
+    
+    p.h1 {
+        font-size: 3em;
+    }
+    form {
+        padding-bottom: 5%;
+    }
+    /* .btn-margin {
+        margin-top: 150px;
+    } */
+    
+}
+

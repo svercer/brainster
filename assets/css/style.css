@@ -1,0 +1,340 @@
+body {
+    color: #353535!important;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    font-style: normal; 
+    padding-top: 12vh;
+    background-color: #f7d231;
+    /* margin: 0; */
+}
+/* COLORS */
+.bg-red {
+    background-color: red!important;
+}
+.red-col {
+    color: red;
+}
+.text-white {
+    color: white;
+}
+.border-zero {
+    border: 1px solid  #f7d231;
+}
+.body-color {
+    background-color: #f7d231;
+}
+.padding-side-0 {
+    padding-left: 0;
+    padding-right: 0;
+} 
+.padding-0 {
+    padding: 0;
+}
+.border-10 {
+    border-radius: 10px;
+}
+.border-top-10 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.border-0 {
+    border-radius: 0;
+}
+
+
+
+.padding-2 {
+    padding: 2% 0;
+}
+.margin-5 {
+    margin: 5%;
+}
+.margin-top-botom-5 {
+    margin: 5% 0;
+}
+.btn-card {
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: none;
+}
+.btn-card:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* navbar start */
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 12vh;
+    text-align: center;
+    padding: 0 3%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 1px 2px 5px 1px rgba(78, 85, 79, 0.2);
+
+}
+.links {
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 15vh;
+}
+.logo {
+    margin-left: 5%;
+    width: 80px;
+    /* max-width: 80px; */
+    padding: 5px;
+}
+.nav-main ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.nav-main ul li {
+    text-align: center;
+}
+.nav-main ul li a {
+    text-decoration: none;
+    color: black;
+    /* font-size: 0.8rem; */
+    margin: 0 10px;
+    text-align: center;
+}
+
+.nav-main button, .btn-nav {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* margin: 0 5%; */
+    /* font-size: 0.9rem; */
+    cursor: pointer;    
+}
+/* Hamburger Menu */
+.barsMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #f7d231;
+    
+}
+.barsMenu:hover {
+    background-color: #d1b32c;
+}
+.icon-bar {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 5%;
+    border-radius: 10px;
+}
+.bar-75 {
+    width: 66%;
+}
+.bar-50 {
+    width: 33%;
+}
+
+a.employee {
+    text-decoration: none;
+    color: white;
+}
+a.employee:hover {
+    text-decoration: none;
+    color: silver;
+}
+/* SIDE BAR */
+.nav-sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 0vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: black;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+    overflow: visible;
+    z-index: 1;
+}
+
+.nav-sidebar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    list-style: none;
+    margin-top: 100px;
+
+}
+.nav-sidebar a {
+    text-decoration: none;
+    color: white;
+}
+.nav-sidebar a:hover:not(.employee) {
+    text-decoration: none;
+    color: silver;
+}
+
+.nav-sidebar li {
+    margin: 5% 0;
+}
+.nav-sidebar li:hover:not(:last-child) {
+    transform: scale(1.1);
+}
+
+button.sidebarIcon {
+    background-color: black;
+    font-size: 2em;
+    border: none;
+    color: white;
+    cursor: pointer;
+    align-self: flex-end;
+    margin: 22px;
+}
+
+/* navbar-finished */
+/* page-intro-start */
+div.page-intro {  
+    background-image: url('../images/page-intro.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    max-width: 100%;
+    max-height: 100%;
+}
+div.page-intro > div {
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    line-height: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+/* page-intro-finished */
+
+/* Tab Containers start */
+.btn-category {
+    color: white;
+    border: none;
+    border-right: 1px solid #333!important;
+    padding: 5% 7%;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%; 
+    margin: 0;
+    border: none;
+    border-color: none;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.btnMarketing, .btnProgramming, .btnDesign {
+background-color: black;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+i.fa-check-circle, .i_marketing, .i_programming, .i_design {
+    color: black;
+    font-size: 2.0em;
+    visibility: hidden;
+}/* buttons finished */
+
+.projectDescription {
+    font-size: 0.9em;
+}
+.tumb-hover:hover {
+    transition: 0.9s;
+    position: relative;
+    bottom: 10px;
+    transform: scale(1.02);
+}
+.marketing {
+    display: block;
+}
+.programming {
+    display: block;
+}
+.design {
+    display: block;
+}
+.footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+.footer p {
+    margin: 0;
+    font-size: 0.9em; 
+
+}
+#Cards {
+    padding-bottom: 8%;
+}
+
+
+
+/* MEDIA */
+@media only screen and (max-width:1024px) {
+    .links, nav > a {
+        display: none;
+        text-align: center;
+    }
+    .nav-main {
+        justify-content: space-between;
+    }
+    
+}
+@media only screen and (min-width:1025px){
+    .barsMenu {
+        display: none;
+    }
+    .nav-sidebar {
+        display: none;
+    }
+    
+}
+@media only screen and (max-width:768px){
+    .btn-category {
+       
+        border-bottom: 1px solid #333!important;
+    }
+    .headingProjects p {
+        text-align: left;
+        font-size: 1.8em;
+    }
+    
+    
+}
+
+
+
